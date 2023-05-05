@@ -12,14 +12,14 @@ module.exports = {
         publicPath: "/",
         clean: true,
     },
+    mode: 'production',
     resolve: {
-        extensions: ['.js', '.jsx']
-    },
+        extensions: ['.js', '.jsx'],
     alias: {
         '@components': path.resolve(__dirname, 'src/components/'),
         '@styles': path.resolve(__dirname, 'src/styles/'),
+        },
     },
-    mode: 'production',
     module: {
         rules: [
             {test: /\.(js|jsx)$/,
